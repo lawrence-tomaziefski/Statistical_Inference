@@ -1,8 +1,8 @@
 # Statistical Inference Course Project
 Lawrence A. Tomaziefski  
 
-####***Part One: Simulation Exercise***
-#####***Simulation Exercise Overview***
+***Part One: Simulation Exercise***
+***Simulation Exercise Overview***
 The purpose of this report is to demonstrate the Central Limit Theorem.  R is used to conduct three fairly simple simulations to show that regardless of the underlying distribution given a large enough sample of independant, identically, distributed (iid) variables the resulting distribution will be approximately normal.  The underlying distribution used in this exercise is the exponential distribution.
 
 #####***Simulation Exercise***
