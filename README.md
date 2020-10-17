@@ -4,6 +4,7 @@ Lawrence A. Tomaziefski
 ***Part One: Simulation Exercise***
 
 ***Simulation Exercise Overview***
+
 The purpose of this report is to demonstrate the Central Limit Theorem.  R is used to conduct three fairly simple simulations to show that regardless of the underlying distribution given a large enough sample of independant, identically, distributed (iid) variables the resulting distribution will be approximately normal.  The underlying distribution used in this exercise is the exponential distribution.
 
 ***Simulation Exercise***
@@ -46,14 +47,14 @@ Based on the exploratory data analysis, and assuming independent groups and equa
 
 
 
- + Hypothesis Test 1 (Supplement)  $H_o:~\mu_OJ = \mu_VC$ 
- + Hypothesis Test 2 (Dose)  $H_o:~\mu_1 mg/day = \mu_2 mg/day$    
+ + Hypothesis Test 1 (Supplement)  $ H_o:~\mu_OJ = \mu_VC $ 
+ + Hypothesis Test 2 (Dose)  $ H_o:~\mu_1 mg/day = \mu_2 mg/day $    
 
-The alternative hypothesis, $H_a$ for each of the listed test is that there is no difference in the true means.  
+The alternative hypothesis, $ H_a $ for each of the listed test is that there is no difference in the true means.  
 
 ***Hypothesis Testing and Results***
 
-Hypothesis Test 1 (Supplement)  $H_o:~\mu_OJ = \mu_VC$ 
+Hypothesis Test 1 (Supplement)  $ H_o:~\mu_OJ = \mu_VC $ 
 
 ```
 ## [1] -0.1670064  7.5670064
