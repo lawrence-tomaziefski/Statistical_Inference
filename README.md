@@ -5,7 +5,8 @@ Lawrence A. Tomaziefski
 ***Simulation Exercise Overview***
 The purpose of this report is to demonstrate the Central Limit Theorem.  R is used to conduct three fairly simple simulations to show that regardless of the underlying distribution given a large enough sample of independant, identically, distributed (iid) variables the resulting distribution will be approximately normal.  The underlying distribution used in this exercise is the exponential distribution.
 
-#####***Simulation Exercise***
+***Simulation Exercise***
+
 The exponential distribution is the time between events in Poisson processes.  The probability density function:
 $$f(x) = {\lambda}e^{-{\lambda}x}~~when~~x > 0 ~~and~~ 0~~for~ x \le 0$$
 where $\lambda$ is the rate parameter (number of events per unit of time) and x defines time.  For the purposes of this exercise $\lambda = .2$.  The mean of the exponential distribution, or $\beta = 1/{\lambda}$.  Therefore, the theoretical mean for an exponential distribution with a $\lambda = .2$ is 5.0.  When 1000 random exponentials are simulated in R using the rexp function, a distribution with a long right tail is produced.  The mean of the distribution is  5.1, which is close to the theoretical mean of 5.0.  Figure 1 is a visual representation of the density of the simulated exponential distribution.
@@ -21,8 +22,9 @@ Taking the demonstration one step further the means of the sample population wer
 
 ***
 
-####***Part Two: Statistical Inference of Tooth Growth Data***
-#####***Exploratory Data Analysis***
+***Part Two: Statistical Inference of Tooth Growth Data***
+
+***Exploratory Data Analysis***
 According to the R documentation, the ToothGrowth dataset contains the response of tooth growth in guinea pigs to vitamin C.  Measurements of the odontoblast from 60 guinea pigs were recorded after being treated with vitamin C either given via orange juice (OJ) or ascorbic acid (VC) in three possible doses 0.5, 1, and 2 mg/day.  For each supplement (OJ or VC) and dose combinations 10 guinea pigs were sampled and thier odontoblast length was measured.  Therefore, thae data set consists of 6 independent groups.  Exploration of the sample data indicates that odontoblast length increases as vitamin C dose increase regardless of delivery method.  OJ seems to produce better tooth growth results, however both delivery methods appear to produce the same results with a dose of 2 mg/day.       
 
 
@@ -47,7 +49,7 @@ Based on the exploratory data analysis, and assuming independent groups and equa
 
 The alternative hypothesis, $H_{a}$ for each of the listed test is that there is no difference in the true means.  
 
-#####***Hypothesis Testing and Results***
+***Hypothesis Testing and Results***
 Hypothesis Test 1 (Supplement)  $H_{o}:~\mu_{OJ} = \mu_{VC}$ 
 
 ```
@@ -66,13 +68,13 @@ Hypothesis Test 2 (Dose)  $H_{o}:~\mu_{1 mg/day} = \mu_{2 mg/day}$
 ```
 0 is not in the 95% confidence interval therefore, ***fail to reject*** the null hypothesis that there is a difference in the true means of dose.  The confidence interval indicates that a larger dose produces more tooth growth.
 
-#####***Conclusions***
+***Conclusions***
 Based on the hypothesis test conducted, delivering vitamin C via OJ or VC will produce similiar tooth growth in guinea pigs.  However, a larger dose is more effective in promoting tooth growth.  
 
 ***
 
-####***Appendix***
-#####***R Script For Simulation Exercise***
+***Appendix***
+***R Script For Simulation Exercise***
 
 
 ```r
